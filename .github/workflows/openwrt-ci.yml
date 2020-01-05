@@ -27,9 +27,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
-          ref: CI-demo          docker rmi `docker images -q`
+          ref: master          docker rmi `docker images -q`
 
-        #      ↑↑↑ 改成你的分支名, 一般是master
+       
 
       - name: Initialization environment
         env:
