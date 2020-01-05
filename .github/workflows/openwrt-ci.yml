@@ -1,4 +1,4 @@
-#
+
 #
 # This is free software, lisence use MIT.
 # 
@@ -27,7 +27,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
-          ref: CI-demo
+          ref: CI-demo          docker rmi `docker images -q`
+
         #      ↑↑↑ 改成你的分支名, 一般是master
 
       - name: Initialization environment
